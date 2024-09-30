@@ -22,6 +22,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Display Hello.txt
+        run: ls -lat
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
@@ -29,5 +31,4 @@ jobs:
            path: artifacts/hello.txt
       - name: Display Hello.txt
         run: cat ./artifacts/hello.txt
-      - name: Display Hello.txt
-        run: ls -lat
+
