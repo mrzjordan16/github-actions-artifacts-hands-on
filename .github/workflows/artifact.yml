@@ -28,3 +28,5 @@ jobs:
            path: artifacts/hello.txt
       - name: Display Hello.txt
         run: cat ./artifacts/hello.txt
+      - name: Display Hello.txt
+        run: ls -lat
